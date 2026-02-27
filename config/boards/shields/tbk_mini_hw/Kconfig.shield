@@ -1,0 +1,5 @@
+config SHIELD_TBK_MINI_HW_LEFT
+    def_bool $(shields_list_contains,tbk_mini_hw_left)
+
+config SHIELD_TBK_MINI_HW_RIGHT
+    def_bool $(shields_list_contains,tbk_mini_hw_right)
