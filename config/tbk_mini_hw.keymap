@@ -32,30 +32,30 @@
             >;
         };
 
-        layer_3 {
+        symbols {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LBRC      &kp RBRC              &kp AMPERSAND          &kp KP_ASTERISK  &kp LBKT   &kp RBKT
+&trans  &trans  &trans  &trans  &trans  &trans  &kp KP_EQUAL  &kp DOLLAR            &kp PERCENT            &kp CARET        &kp COLON  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp PIPE      &kp EXCLAMATION       &kp AT_SIGN            &kp POUND        &kp TILDE  &trans
+                        &trans  &trans  &trans  &kp MINUS     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
             >;
         };
 
-        layer_4 {
+        language {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp N7  &kp N8  &kp EQUAL  &trans  &trans
+&trans  &trans        &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans     &trans  &trans
+&trans  &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)     &kp LC(Y)     &trans        &trans  &trans  &trans     &trans  &trans
+                                    &trans        &trans        &trans        &trans        &trans  &trans
             >;
         };
 
-        layer_5 {
+        navigate {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp PAGE_UP    &kp HOME   &kp UP     &kp END    &kp INSERT  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp PAGE_DOWN  &kp LEFT   &kp DOWN   &kp RIGHT  &kp CAPS    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LC(Z)      &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(Y)   &trans  &trans  &trans  &trans  &trans  &trans
+                                  &trans     &trans     &trans      &trans  &trans  &trans
             >;
         };
 
