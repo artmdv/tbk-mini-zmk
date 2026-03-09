@@ -2,8 +2,7 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-
-	behaviors {
+    behaviors {
         mt: mod_tap {
             compatible = "zmk,behavior-hold-tap";
             label = "MOD_TAP";
@@ -14,6 +13,7 @@
             require-prior-idle-ms = <125>;
             bindings = <&kp>, <&kp>;
         };
+
         lt: layer_tap {
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TAP";
@@ -24,7 +24,7 @@
             bindings = <&mo>, <&kp>;
         };
     };
-	
+
     combos {
         compatible = "zmk,combos";
 
@@ -71,10 +71,10 @@
 
         symbols {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &kp LBRC      &kp RBRC              &kp AMPERSAND          &kp KP_ASTERISK  &kp LBKT   &kp RBKT
-&trans  &trans  &trans  &trans  &trans  &trans  &kp KP_EQUAL  &kp DOLLAR            &kp PERCENT            &kp CARET        &kp COLON  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp PIPE      &kp EXCLAMATION       &kp AT_SIGN            &kp POUND        &kp TILDE  &trans
-                        &trans  &trans  &trans  &kp MINUS     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LBRC       &kp RBRC              &kp LA(AMPERSAND)      &kp KP_ASTERISK  &kp LBKT   &kp RBKT
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LA(EQUAL)  &kp LA(DOLLAR)        &kp LA(PERCENT)        &kp LA(CARET)    &kp COLON  &kp SINGLE_QUOTE
+&trans  &trans  &trans  &trans  &trans  &trans  &kp PIPE       &kp LA(EXCLAMATION)   &kp LA(AT_SIGN)        &kp LA(POUND)    &kp TILDE  &trans
+                        &trans  &trans  &trans  &kp MINUS      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
             >;
         };
 
